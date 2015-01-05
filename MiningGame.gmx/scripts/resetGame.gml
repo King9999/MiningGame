@@ -1,0 +1,38 @@
+//resets game state to default in case the player wants to redo the game but not exit.
+randomize();
+
+global.mapGrid = ds_grid_create(4, 4);         
+global.finishedGrid = ds_grid_create(1, 1);
+global.aStarGrid = ds_grid_create(1, 1);      
+//global.rockHealthGrid = ds_grid_create(1, 1);   
+//global.objectGrid = ds_grid_create(1, 1);
+global.inventory = ds_list_create();           
+global.level = 1;                               
+global.tier = 1;                                
+global.oxygen = 100;                           
+global.hearts = MIN_HEARTS;
+global.currentMaxHearts = MIN_HEARTS;                              
+global.pickaxeLevel = 1;
+global.heartLevel = 1;
+global.oxygenLevel = 1;
+global.lanternLevel = 1;
+global.cash = 0;
+global.totalCash = 0;                               
+global.levelModAlert = "";                      
+global.levelModded = false;
+global.bonusRateMod = 0;                        
+global.dropRateMod = 1;                       
+global.valueMod = 1;
+global.locationSet = false;
+global.rocksBrittle = false;                    
+global.onBonusStage = false;                    
+global.oxygenDecreasing = true;                 
+global.superRocksEnabled = false;               
+global.rockCount = 0;                           
+global.cashBonus = 0;                           
+global.oxygenBonus = 10;
+global.enemyCount = 0;
+global.heartBonus = 0;
+global.enemiesSpawned = false;
+global.currentTotalCash = 0;
+global.moveSpeedMod = 1; 
